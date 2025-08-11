@@ -1,7 +1,13 @@
-# JavaScript Öğrenme Süreci
+<h2 align="center">JavaScript Öğrenme Süreci</h2>
 
 Bu depo, JavaScript öğrenme yolculuğum boyunca hazırladığım notlar, örnek kodlar ve projeleri içermektedir. Amacım, edindiğim bilgileri sistematik bir şekilde belgeleyerek hem kendi gelişimimi takip etmek hem de benzer yolda ilerlemek isteyenlere fayda sağlamaktır.
 
+---
+
+## İçerik
+      - Javascripte Giriş
+
+Daha detaylı içerik bilgisi için [DETAYLI DOKÜMANTASYON]() dosyasına bakabilirsiniz.
 ---
 
 ## Kullanım
