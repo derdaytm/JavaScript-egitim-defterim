@@ -107,3 +107,28 @@ function selamla() {
 
 ### Özet
 Süslü parantez { } ile oluşturulan bloklar, bir arada çalışan komutlar topluluğudur ve JavaScript yapılarının temel yapı taşlarından biridir.
+
+## Büyük-Küçük Harf Duyarlılığı ve Boşluk Karakterleri
+
+JavaScript, **büyük-küçük harf duyarlıdır** (case-sensitive). Yani `degisken`, `Degisken` ve `DEGISKEN` farklı isimler olarak kabul edilir ve farklı değişkenlerdir.
+
+```js
+let isim = "Ali";
+let Isim = "Ayşe";
+
+console.log(isim);  // Çıktı: Ali
+console.log(Isim);  // Çıktı: Ayşe
+```
+Ayrıca, JavaScript boşluk karakterlerini derlemez yani kodun çalışmasını engellemez, ancak kodun okunabilirliği için boşluklar önemlidir. Aşağıdaki iki kod da aynı işlevi yapar:
+```js
+// Boşluklu ve düzenli yazım
+if (sayi > 10) {
+  console.log("Sayı 10'dan büyük");
+}
+
+// Boşluksuz yazım (okunması zor)
+if(sayi>10){console.log("Sayı 10'dan büyük");}
+```
+### Özet
+  - Değişken, fonksiyon ve diğer isimlerde büyük/küçük harf farkı önemlidir.
+  - Boşluklar kodun çalışmasını etkilemez ama okunabilirliği artırır.
