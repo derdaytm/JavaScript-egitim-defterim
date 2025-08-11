@@ -11,12 +11,6 @@
 ## İçerik
 
 - JavaScript'e Giriş  
-- Temel Kavramlar ve Veri Tipleri  
-- Fonksiyonlar ve Nesne Yapıları  
-- Asenkron Programlama Teknikleri  
-- DOM Manipülasyonu ve Etkileşim  
-- Modüller ve İleri Seviye Konular  
-- Pratik Projeler ve Uygulamalar  
 
 Daha detaylı içerik için [DETAYLI DOKÜMANTASYON]() dosyasına bakabilirsiniz.
 
