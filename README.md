@@ -5,7 +5,7 @@ Bu depo, JavaScript öğrenme yolculuğum boyunca hazırladığım notlar, örne
 ---
 
 ## İçerik
-      - Javascripte Giriş
+  - Javascripte Giriş
 
 Daha detaylı içerik bilgisi için [DETAYLI DOKÜMANTASYON]() dosyasına bakabilirsiniz.
 ---
