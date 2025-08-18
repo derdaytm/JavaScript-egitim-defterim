@@ -119,7 +119,9 @@ let Isim = "Ayşe";
 console.log(isim);  // Çıktı: Ali
 console.log(Isim);  // Çıktı: Ayşe
 ```
+
 Ayrıca, JavaScript boşluk karakterlerini derlemez yani kodun çalışmasını engellemez, ancak kodun okunabilirliği için boşluklar önemlidir. Aşağıdaki iki kod da aynı işlevi yapar:
+
 ```js
 // Boşluklu ve düzenli yazım
 if (sayi > 10) {
@@ -129,6 +131,162 @@ if (sayi > 10) {
 // Boşluksuz yazım (okunması zor)
 if(sayi>10){console.log("Sayı 10'dan büyük");}
 ```
+
 ### Özet
   - Değişken, fonksiyon ve diğer isimlerde büyük/küçük harf farkı önemlidir.
   - Boşluklar kodun çalışmasını etkilemez ama okunabilirliği artırır.
+
+## `<script>` Etiketi ve Dosya Yolları
+JavaScript kodları HTML sayfasına `<script>` etiketi ile eklenir. Kodları sayfaya ekleme yöntemleri şunlardır:
+
+### 1. Satır İçi (Inline) JavaScript
+Kod doğrudan HTML içinde yazılabilir:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JS Örneği</title>
+</head>
+<body>
+    <h1>Merhaba Dünya!</h1>
+
+    <script>
+        alert("Bu satır içi JavaScript örneğidir!");
+    </script>
+</body>
+</html>
+```
+
+### 2. Harici JavaScript Dosyası
+Kodları ayrı bir `.js` dosyasında tutmak önerilir. Bu, okunabilirliği ve bakım kolaylığını artırır.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harici JS Örneği</title>
+    <script src="./script.js"></script> <!-- Dosya yolu belirtilir -->
+</head>
+<body>
+    <h1>Merhaba Dünya!</h1>
+</body>
+</html>
+```
+
+`script.js` dosyası içeriği:
+
+```js
+alert("Bu bir harici JavaScript dosyasıdır!");
+```
+
+Dosya Yolları
+- . → geçerli dizin
+- .. → bir üst dizin
+- Birden fazla `.js` dosyası eklenebilir:
+  
+```js
+<script src="dosya1.js"></script>
+<script src="dosya2.js"></script>
+```
+
+### 3. Performans Önerisi
+- `<script>` etiketi `<head>` içinde veya `<body>` sonunda kullanılabilir.
+- `<body>` sonunda kullanmak sayfanın daha hızlı yüklenmesini sağlar.
+
+## Yazım düzenine (indentation) dikkat edilmelidir.  
+Kodun okunabilirliği ve bakımının kolay olması için girintileme kurallarına uymak önemlidir.  
+JavaScript'te blok yapıları `{ }` ile belirlenir; iç içe geçmiş yapılar uygun şekilde girintilenmelidir.
+
+  ```js
+  // Doğru girintileme
+  function selamla(isim) {
+      if (isim) {
+          console.log(`Merhaba, ${isim}!`);
+      } else {
+          console.log("Merhaba!");
+      }
+  }
+
+  // Yanlış girintileme
+  function selamla(isim){
+  if(isim){
+  console.log(`Merhaba, ${isim}!`);
+  }else{
+  console.log("Merhaba!");
+  }
+  }
+```
+
+### Özet
+Düzenli yazım, kodun okunmasını kolaylaştırır ve hata yapma riskini azaltır.
+
+## `"use strict"` kullanımı**  
+JavaScript'te `"use strict";` ifadesi, kodu **sıkı modda** çalıştırır. Bu mod, hatalara karşı daha duyarlı, güvenli ve temiz bir kod yazmanızı sağlar.  
+  Örneğin, değişkenleri tanımlamadan kullanmak veya silinemez özellikleri değiştirmek gibi hataları tespit eder.
+
+  ```js
+  // Sıkı mod kullanılmadan
+  x = 10; // Hata vermez, global değişken oluşturulur
+  console.log(x); // 10
+
+  // Sıkı mod ile
+  "use strict";
+  y = 20; // Hata: y tanımlanmadan kullanılamaz
+  console.log(y);
+```
+
+### Özet
+"use strict" kullanmak, hataları erken tespit etmenizi sağlar ve kodunuzu daha güvenli hale getirir. Tarayıcılar modern kodlarda genellikle bunu otomatik uygular, ancak manuel eklemek iyi bir pratiktir.
+
+## Satır uzunluğu ve okunabilirlik
+Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun satırlar **alt satırlara bölünerek** yazılmalıdır. Bu, kodun okunabilirliğini ve bakımını artırır.
+
+```js
+  // Uzun ve okunması zor
+  let sonuc = sayi1 + sayi2 + sayi3 + sayi4 + sayi5 + sayi6 + sayi7;
+
+  // Daha okunabilir şekilde satırlara bölünmüş
+  let sonuc = sayi1 + sayi2 + sayi3 +
+              sayi4 + sayi5 + sayi6 +
+              sayi7;
+```
+
+### Özet
+Kod satırlarını makul uzunlukta tutmak ve gerektiğinde alt satırlara bölmek, kodu takip etmeyi ve hataları önlemeyi kolaylaştırır.
+
+## Bazı Temel Komutlar ve Kullanımları
+
+### Yorum Satırları
+Kodun okunabilirliğini artırmak için yorum satırları kullanılır.  
+Yorumlar, tarayıcı veya JavaScript motoru tarafından çalıştırılmaz, sadece geliştiriciye açıklama yapar. 
+
+- **Tek Satırlık Yorum (`//`)**  
+`//` işareti ile başlayan ifadeler satırın sonuna kadar yorum kabul edilir.  
+Daha çok kısa notlar veya tek satırlık açıklamalar için kullanılır.  
+
+```js
+// Bu değişken kullanıcı adını tutar
+let kullaniciAdi = "Ahmet";
+```
+
+- **Çok Satırlık Yorum `(/* ... */)`**
+`/*` ile başlar, `*/` ile biter. Arada kalan her şey yorum olarak kabul edilir.
+Daha uzun açıklamalar veya kod bloklarını geçici olarak kapatmak için tercih edilir.
+
+ ```js
+/*
+  Bu fonksiyon kullanıcıyı selamlar.
+  Parametre olarak isim alır.
+*/
+function selamVer(isim) {
+  console.log("Merhaba " + isim);
+}
+```
+
+- **Kısayollar**
+  - <kbd>Ctrl + /</kbd> → Seçili satır(lar)ı tek satır yorum haline getirir.
+  - <kbd>Ctrl + Shift + /</kbd> → Seçili kısmı çok satırlı yorum haline getirir.
+
+### Not
+Yorumları, kodun ne yaptığını değil, neden yapıldığını açıklamak için kullan. Kod zaten ne yaptığını göstermelidir.
