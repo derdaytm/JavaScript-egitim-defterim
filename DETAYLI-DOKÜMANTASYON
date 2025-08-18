@@ -1,0 +1,125 @@
+# 📖 Detaylı Dokümantasyon
+
+## 1. Temel Bilgiler
+- Noktalı Virgül Kullanımı
+- Tırnak İşaretleri
+- Parantezlerin Kapatılması
+- Blok Yapıları `{ }`
+- Büyük/Küçük Harf Duyarlılığı
+- Boşluk ve Satır Düzeni
+- "use strict" Kullanımı
+
+---
+
+## 2. JavaScript’in HTML’e Dahil Edilmesi
+- `<script>` Etiketi Kullanımı
+- İç Script Yazımı
+- Harici Script Dosyaları
+- Script Dosyalarının Konumlandırılması (head / body)
+- Birden Fazla Script Dosyası Ekleme
+- Yol Gösterimi (`./` ve `../`)
+
+---
+
+## 3. Yorum Satırları
+- Tek Satırlık Yorumlar (`//`)
+- Çok Satırlı Yorumlar (`/* */`)
+- Klavye Kısayolları (Ctrl+/ , Ctrl+Shift+/)
+
+---
+
+## 4. Çıktı ve Etkileşim Fonksiyonları
+- `alert()`
+- `prompt()`
+- `confirm()`
+- `document.write()`
+- `console.log()`
+
+---
+
+## 5. Değişkenler ve Veri Türleri
+- Değişken Tanımlama (`var`, `let`, `const`)
+- Temel Veri Türleri
+  - String
+  - Number
+  - Boolean
+  - Null
+  - Undefined
+- `typeof` Operatörü
+- Kaçış Karakterleri (`\"`, `\n`, `\t`)
+
+---
+
+## 6. Operatörler
+- Atama Operatörleri
+- Aritmetik Operatörler
+- Karşılaştırma Operatörleri
+- Mantıksal Operatörler
+- `Object.is()` Kullanımı
+
+---
+
+## 7. Kontrol Yapıları ve Döngüler
+- Koşullu Yapılar
+  - `if`
+  - `if-else`
+  - `else if`
+  - `switch`
+- Döngüler
+  - `for`
+  - `while`
+  - `do...while`
+  - `for...of`
+  - `for...in`
+- Döngü Kontrol İfadeleri
+  - `break`
+  - `continue`
+
+---
+
+## 8. Fonksiyonlar
+- Fonksiyon Tanımı
+- Parametreler ve Argümanlar
+- Geri Dönüş Değerleri (`return`)
+- Fonksiyon İfadeleri
+- Arrow Functions (ES6)
+
+---
+
+## 9. Nesneler (Objects)
+- Nesne Tanımlama
+- Özellikler (Properties)
+- Metotlar (Methods)
+- `this` Anahtar Kelimesi
+- Nesne Karşılaştırmaları
+
+---
+
+## 10. Diziler (Arrays)
+- Dizi Tanımlama
+- Dizi Elemanlarına Erişim
+- Dizi Metotları
+  - `push()`, `pop()`
+  - `shift()`, `unshift()`
+  - `map()`, `filter()`, `reduce()`
+  - `forEach()`
+
+---
+
+## 11. Hatalar ve Hata Yönetimi
+- Syntax Hataları
+- Runtime Hataları
+- `try...catch`
+- `finally`
+
+---
+
+## 12. Gelişmiş Konular
+- Scope (Kapsam)
+- Hoisting
+- Closure
+- ES6 Yenilikleri
+  - Template Literals
+  - Destructuring
+  - Spread & Rest Operatörleri
+  - Modüller (import/export)
