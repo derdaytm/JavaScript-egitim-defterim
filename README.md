@@ -20,7 +20,7 @@ Daha detaylı içerik için [DETAYLI DOKÜMANTASYON](DETAYLI-DOKÜMANTASYON.md
 ## Kullanım
 
 Bu repodaki içerikler kişisel öğrenme sürecime uygun şekilde hazırlanmıştır ve güncel ECMAScript standartlarına göre düzenlenmektedir. Kodları inceleyebilir, projelerinize adapte edebilirsiniz.
-> ℹ️ Bu içeriklerden en iyi şekilde faydalanmak için biraz temel yazılım bilgisine sahip olmanız faydalı olacaktır.
+> ℹ️ Bu içeriklerden en iyi şekilde faydalanmak için temel yazılım bilgisine sahip olmanız faydalı olacaktır.
 
 <hr style="border: none; height: 1px; background: #ecf0f1; margin: 2em 0;" />
 
