@@ -2,6 +2,12 @@
 
 JavaScript programlama diline yeni başlayanlar için temel kurallar ve dikkat edilmesi gereken noktalar bu dokümanda açıklanmıştır. Kod yazarken uyulması gereken standartlar, kodun doğru ve tutarlı çalışmasını sağlar.
 
+let ile değişken oluşturulur.
+
+console.log ile konsola çıktı yazdırılır.
+
+Bu iki komutun ne işe yaradığını bilmemiz şuanlık yeterli gelecektir. İleride detaylı açıklaması yapılacaktır.
+
 Aşağıda JavaScript yazım kuralları ve genel bilgiler örneklerle desteklenerek sunulmuştur.
 
 ---
@@ -38,7 +44,7 @@ let d = 10
 ```
 ## Tırnak İşaretleri ve Parantez Kullanımı
 
-JavaScript'te **string (karakter dizisi)** oluştururken tırnak işaretleri (quotes) kullanılır. Tırnak işaretlerinin açıldığı gibi aynı türde kapatılması gereklidir. Ayrıca, açılan parantezlerin de mutlaka kapatılması gerekir.
+JavaScript'te **string (karakter dizisi)** oluştururken **tırnak işaretleri (quotes)** kullanılır. Tırnak işaretlerinin açıldığı gibi aynı türde kapatılması gereklidir. Ayrıca, açılan parantezlerin de mutlaka kapatılması gerekir.
 
 ### Tırnak İşaretleri
 
@@ -106,11 +112,11 @@ function selamla() {
   - Blok dışındaki kodlardan değişken kapsamını (scope) kontrol eder.
 
 ### Özet
-Süslü parantez { } ile oluşturulan bloklar, bir arada çalışan komutlar topluluğudur ve JavaScript yapılarının temel yapı taşlarından biridir.
+Süslü parantez `{ }` ile oluşturulan bloklar, bir arada çalışan komutlar topluluğudur ve JavaScript yapılarının temel yapı taşlarından biridir.
 
 ## Büyük-Küçük Harf Duyarlılığı ve Boşluk Karakterleri
 
-JavaScript, **büyük-küçük harf duyarlıdır** (case-sensitive). Yani `degisken`, `Degisken` ve `DEGISKEN` farklı isimler olarak kabul edilir ve farklı değişkenlerdir.
+JavaScript, **büyük-küçük harf duyarlıdır (case-sensitive)**. Yani `degisken`, `Degisken` ve `DEGISKEN` farklı isimler olarak kabul edilir ve farklı değişkenlerdir.
 
 ```js
 let isim = "Ali";
@@ -159,7 +165,7 @@ Kod doğrudan HTML içinde yazılabilir:
 ```
 
 ### 2. Harici JavaScript Dosyası
-Kodları ayrı bir `.js` dosyasında tutmak önerilir. Bu, okunabilirliği ve bakım kolaylığını artırır.
+Kodları ayrı bir `.js` dosyasında tutmak tercih edilen yöntemdir. Bu, okunabilirliği ve bakım kolaylığını artırır.
 
 ```html
 <!DOCTYPE html>
@@ -221,8 +227,8 @@ JavaScript'te blok yapıları `{ }` ile belirlenir; iç içe geçmiş yapılar u
 ### Özet
 Düzenli yazım, kodun okunmasını kolaylaştırır ve hata yapma riskini azaltır.
 
-## `"use strict"` kullanımı**  
-JavaScript'te `"use strict";` ifadesi, kodu **sıkı modda** çalıştırır. Bu mod, hatalara karşı daha duyarlı, güvenli ve temiz bir kod yazmanızı sağlar.  
+## `"use strict"` kullanımı  
+JavaScript'te `"use strict"` ifadesi, kodu **sıkı modda** çalıştırır. Bu mod, hatalara karşı daha duyarlı, güvenli ve temiz bir kod yazmanızı sağlar.  
   Örneğin, değişkenleri tanımlamadan kullanmak veya silinemez özellikleri değiştirmek gibi hataları tespit eder.
 
   ```js
@@ -237,7 +243,7 @@ JavaScript'te `"use strict";` ifadesi, kodu **sıkı modda** çalıştırır. Bu
 ```
 
 ### Özet
-"use strict" kullanmak, hataları erken tespit etmenizi sağlar ve kodunuzu daha güvenli hale getirir. Tarayıcılar modern kodlarda genellikle bunu otomatik uygular, ancak manuel eklemek iyi bir pratiktir.
+**"use strict"** kullanmak, hataları erken tespit etmenizi sağlar ve kodunuzu daha güvenli hale getirir. Tarayıcılar modern kodlarda genellikle bunu otomatik uygular, ancak manuel eklemek iyi bir pratiktir.
 
 ## Satır uzunluğu ve okunabilirlik
 Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun satırlar **alt satırlara bölünerek** yazılmalıdır. Bu, kodun okunabilirliğini ve bakımını artırır.
