@@ -2,8 +2,7 @@
 
 JavaScript programlama diline yeni başlayanlar için temel kurallar ve dikkat edilmesi gereken noktalar bu dokümanda açıklanmıştır. Kod yazarken uyulması gereken standartlar, kodun doğru ve tutarlı çalışmasını sağlar.
 
-let ile değişken oluşturulur.
-
+let ile değişken oluşturulur.<br>
 console.log ile konsola çıktı yazdırılır.
 
 Bu iki komutun ne işe yaradığını bilmemiz şuanlık yeterli gelecektir. İleride detaylı açıklaması yapılacaktır.
@@ -21,8 +20,6 @@ JavaScript'te her komutun sonunda **noktalı virgül (`;`)** koymak iyi bir prog
 JavaScript çoğu zaman satır sonlarında noktalı virgül koymazsanız bile otomatik olarak ekleyebilir. Buna **Otomatik Noktalı Virgül Ekleme (Automatic Semicolon Insertion - ASI)** denir. Ancak ASI bazen beklenmedik sonuçlara veya hatalara yol açabilir.
 
 Bu yüzden noktalı virgül kullanımı hataları önlemek ve kodun daha okunabilir olması için önerilir.
-
-### Örnekler
 
 ```js
 // Noktalı virgül kullanımı (doğru ve önerilen)
@@ -58,8 +55,6 @@ JavaScript'te üç farklı tırnak türü kullanılır:
 
 Tırnakların uyumsuz kullanımı veya eksik kapatma, kodun hata vermesine neden olur.
 
-### Örnekler
-
 ```js
 // Doğru kullanımlar:
 let mesaj1 = "Merhaba Dünya";
@@ -86,6 +81,7 @@ if (x > 5 {
   console.log("Hata!");
 }
 ```
+
 ### Özet
 Kodunuzda tırnakları ve parantezleri açtığınız gibi kapatmaya dikkat edin. Bu basit kural, sözdizimi hatalarını önler ve kodunuzu çalıştırır hale getirir.
 
@@ -261,9 +257,10 @@ Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun sa
 ### Özet
 Kod satırlarını makul uzunlukta tutmak ve gerektiğinde alt satırlara bölmek, kodu takip etmeyi ve hataları önlemeyi kolaylaştırır.
 
-## Bazı Temel Komutlar ve Kullanımları
+# Bazı Temel Komutlar ve Kullanımları
 
-### Yorum Satırları
+## Yorum Satırları
+
 Kodun okunabilirliğini artırmak için yorum satırları kullanılır.  
 Yorumlar, tarayıcı veya JavaScript motoru tarafından çalıştırılmaz, sadece geliştiriciye açıklama yapar. 
 
@@ -296,3 +293,130 @@ function selamVer(isim) {
 
 ### Not
 Yorumları, kodun ne yaptığını değil, neden yapıldığını açıklamak için kullan. Kod zaten ne yaptığını göstermelidir.
+
+## Alert() ile Ekrana Popup Çıkarma
+Tarayıcıda ekrana **uyarı (popup) penceresi** çıkarmak için kullanılır.  
+Örneğin hata mesajı, bilgi mesajı veya kullanıcıya bildirim vermek için tercih edilir.  
+
+```js
+  alert("Merhaba Dünya!");
+```
+İçine değişken de yazılabilir.
+
+```js
+let isim = "Derda";
+alert(isim); // ekranda "Derda" çıkar
+```
+
+`+` işareti kullanarak string ve değişkenleri yan yana ekleyebilirsin.
+
+```js
+let isim = "Derda";
+alert("Merhaba " + isim + "!");
+```
+
+Template literal (şablon string) ile `${}` kullanarak değişkenleri metinle birlikte gösterebilirsin. Bu kullanım ile değişkenler farklı yazım tarzında olduğu için kod okunabilirliğini artırabilirsin.
+Bu özellik sadece backtick ``` ` ``` işaretiyle yazılır:
+
+```js
+let isim = "Derda";
+let yas = 25;
+alert(`Merhaba ${isim}, yaşın ${yas}`);
+```
+
+## console.log() ile Konsola Yazı Yazdırma
+
+JavaScript'te **console.log()** fonksiyonu, kod çalışırken bilgi veya değişken değerlerini **tarayıcı konsoluna** yazdırmak için kullanılır. Bu, hata ayıklama (debug) ve kodu takip etme açısından çok faydalıdır.
+
+`+` operatörü ile birleştirerek kullanım:
+```js
+let isim = "Ahmet";
+console.log("Kullanıcı adı: " + isim); // Çıktı: Kullanıcı adı: Ahmet
+```
+
+`${}` ( Template literalle ) birlikte kullanım:
+```js
+let yas = 25;
+console.log(`Kullanıcı adı: ${isim}, Yaşı: ${yas}`); // Çıktı: Kullanıcı adı: Ahmet, Yaşı: 25
+```
+
+Birden fazla değişkeni virgülle ayırarak kullanım:
+```js
+let meslek = "Öğrenci";
+console.log(isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
+```
+
+## Prompt() ile Veri Alma
+`prompt()` fonksiyonu, kullanıcıdan veri almak için kullanılan en temel yöntemlerden biridir.<br>
+
+```js
+let isim = prompt("Lütfen isminizi giriniz:", "Varsayılan");
+```
+
+- İlk parametre **("Lütfen isminizi giriniz:")** kullanıcıya gösterilecek mesajdır.
+- İkinci parametre **("Varsayılan")** giriş kutusunda hazır olarak yazılı gelen değerdir (kullanıcı isterse değiştirir, isterse boş bırakabilir).
+
+### Önemli Notlar:
+- Varsayılan değer yazılmayacaksa bile `"" (çift tırnak)` kullanmak iyi bir pratiktir.
+- Kullanıcı ***Tamam*** butonuna basarsa girilen değer **string** olarak döner.
+- Kullanıcı ***İptal*** butonuna basarsa fonksiyon **null** döndürür.
+
+```js
+let yas = prompt("Yaşınızı giriniz:", "");
+alert("Girdiğiniz yaş: " + yas);
+```
+
+Eğer 25 girilirse, ekranda: `Girdiğiniz yaş : 25` <br>
+Eğer iptal edilirse, ekranda: `Girdiğiniz yaş : null`
+
+### Not
+- Girilen değer her zaman **string** tipindedir.
+- Kullanıcı ***iptal*** ettiğinde değer **null** olur.
+- Varsayılan değer eklemek kullanıcı deneyimini iyileştirir yoksa bile boş bırakmak daha sağlıklıdır.
+
+## confirm() ile Onay Alma
+
+JavaScript'te kullanıcıdan **onay** almak için `confirm()` fonksiyonu kullanılır.  
+Bu fonksiyon, ekranda **Tamam** ve **İptal** seçenekleri olan bir dialog kutusu açar.
+
+- Eğer kullanıcı **Tamam** derse: `true` döner  
+- Eğer kullanıcı **İptal** derse: `false` döner
+
+```js
+let eminMisin = confirm("Devam etmek istiyor musunuz?");
+
+if (eminMisin) {
+    console.log("Kullanıcı devam etmek istedi.");
+} else {
+    console.log("Kullanıcı iptal etti.");
+}
+```
+Bu şekilde `confirm()` ile basit onay kontrolleri yapabilirsiniz.
+
+## Özet 
+
+JavaScript'te kullanıcıyla etkileşim kurmak için üç temel fonksiyon vardır:
+
+1. **alert()** → Ekrana bilgi veya uyarı mesajı gösterir.  
+2. **prompt()** → Kullanıcıdan veri girmesini sağlar; girilen değer string olarak döner.  
+3. **confirm()** → Kullanıcıdan onay alır; `true` veya `false` döner.
+4. **console.log()** → Konsola istenilen veriyi yazdırır.
+
+### Örnek Kullanım
+
+```js
+// alert ile mesaj gösterme
+alert("Merhaba! JavaScript'e hoş geldiniz.");
+
+// prompt ile kullanıcıdan bilgi alma
+let isim = prompt("Lütfen adınızı giriniz:", "Ahmet");
+console.log("Kullanıcı adı:", isim);
+
+// confirm ile onay alma
+let eminMisin = confirm("Devam etmek istiyor musunuz?");
+if (eminMisin) {
+    console.log("Kullanıcı devam etmek istedi.");
+} else {
+    console.log("Kullanıcı iptal etti.");
+}
+```
