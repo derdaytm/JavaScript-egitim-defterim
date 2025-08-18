@@ -3,7 +3,7 @@
 </h1>
 
 <p style="max-width: 650px; margin: 1em auto 2em auto; font-size: 1.1em; line-height: 1.6; color: #34495e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  Bu depo, JavaScript öğrenme yolculuğum boyunca oluşturduğum kapsamlı notlar, örnekler ve projeleri içermektedir. Amacım; edindiğim bilgileri sistematik olarak belgeleyip, hem kendi gelişimimi takip etmek hem de aynı yolda ilerleyenlere fayda sağlamaktır.
+  Bu repo, JavaScript öğrenme yolculuğum boyunca oluşturduğum kapsamlı notlar, örnekler ve projeleri içermektedir. Amacım; edindiğim bilgileri sistematik olarak belgeleyip, hem kendi gelişimimi takip etmek hem de aynı yolda ilerleyenlere fayda sağlamaktır.
 </p>
 
 <hr style="border: none; height: 1px; background: #ecf0f1; margin: 2em 0;" />
@@ -19,7 +19,8 @@ Daha detaylı içerik için [DETAYLI DOKÜMANTASYON](DETAYLI-DOKÜMANTASYON.md
 
 ## Kullanım
 
-Bu depodaki içerikler kişisel öğrenme sürecime uygun şekilde hazırlanmıştır ve güncel ECMAScript standartlarına göre düzenlenmektedir. Kodları inceleyebilir, projelerinize adapte edebilirsiniz.
+Bu repodaki içerikler kişisel öğrenme sürecime uygun şekilde hazırlanmıştır ve güncel ECMAScript standartlarına göre düzenlenmektedir. Kodları inceleyebilir, projelerinize adapte edebilirsiniz.
+> ℹ️ Bu içeriklerden en iyi şekilde faydalanmak için biraz temel yazılım bilgisine sahip olmanız faydalı olacaktır.
 
 <hr style="border: none; height: 1px; background: #ecf0f1; margin: 2em 0;" />
 
