@@ -18,7 +18,7 @@ Daha detaylı içerik için [DETAYLI DOKÜMANTASYON]() dosyasına bakabilirsiniz
 
 ## Kullanım
 
-Bu depodaki içerikler kişisel öğrenme sürecime uygun şekilde hazırlanmıştır ve güncel ECMAScript standartlarına göre düzenlenmektedir. Kodları inceleyebilir, projelerinize adapte edebilir ve katkı sağlayabilirsiniz.
+Bu depodaki içerikler kişisel öğrenme sürecime uygun şekilde hazırlanmıştır ve güncel ECMAScript standartlarına göre düzenlenmektedir. Kodları inceleyebilir, projelerinize adapte edebilirsiniz.
 
 <hr style="border: none; height: 1px; background: #ecf0f1; margin: 2em 0;" />
 
