@@ -12,7 +12,8 @@
 
 - JavaScript'e Giriş  
 
-Daha detaylı içerik için [DETAYLI DOKÜMANTASYON]() dosyasına bakabilirsiniz.
+Daha detaylı içerik için [DETAYLI DOKÜMANTASYON](DETAYLI-DOKÜMANTASYON.md
+) dosyasına bakabilirsiniz.
 
 <hr style="border: none; height: 1px; background: #ecf0f1; margin: 2em 0;" />
 
