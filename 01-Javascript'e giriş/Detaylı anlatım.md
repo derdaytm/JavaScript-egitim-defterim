@@ -356,7 +356,7 @@ let isim = prompt("Lütfen isminizi giriniz:", "Varsayılan");
 - İlk parametre **("Lütfen isminizi giriniz:")** kullanıcıya gösterilecek mesajdır.
 - İkinci parametre **("Varsayılan")** giriş kutusunda hazır olarak yazılı gelen değerdir (kullanıcı isterse değiştirir, isterse boş bırakabilir).
 
-### Önemli Notlar:
+### Not:
 - Varsayılan değer yazılmayacaksa bile `"" (çift tırnak)` kullanmak iyi bir pratiktir.
 - Kullanıcı ***Tamam*** butonuna basarsa girilen değer **string** olarak döner.
 - Kullanıcı ***İptal*** butonuna basarsa fonksiyon **null** döndürür.
@@ -369,7 +369,7 @@ alert("Girdiğiniz yaş: " + yas);
 Eğer 25 girilirse, ekranda: `Girdiğiniz yaş : 25` <br>
 Eğer iptal edilirse, ekranda: `Girdiğiniz yaş : null`
 
-### Not
+### Not:
 - Girilen değer her zaman **string** tipindedir.
 - Kullanıcı ***iptal*** ettiğinde değer **null** olur.
 - Varsayılan değer eklemek kullanıcı deneyimini iyileştirir yoksa bile boş bırakmak daha sağlıklıdır.
@@ -420,3 +420,72 @@ if (eminMisin) {
     console.log("Kullanıcı iptal etti.");
 }
 ```
+## document.write() ile HTML Sayfasına Yazı Yazdırma
+
+JavaScript'te `document.write()` metodu, HTML sayfasına **doğrudan içerik yazdırmak** için kullanılır. Sayfa yüklendiği anda çalışır ve belirtilen metni veya ifadeyi doğrudan ekrana basar.
+
+`+` operatörü ile birleştirerek kullanım:
+```js
+let isim = "Ahmet";
+document.write("Merhaba " + isim + "!");
+
+let yas = 25;
+document.write("Adınız: " + "Ali" + "<br>" + "Yaşınız: " + yas); // <br> = html'de alt satıra geçme tagıdır.
+```
+
+### Not:
+`document.write()` sayfa yüklendikten sonra çalıştırılırsa, mevcut içeriği silip sadece yazdırılan ifadeyi gösterir. Bu yüzden modern projelerde kullanımı önerilmez. Daha güvenli ve kontrollü yöntemler tercih edilmelidir.
+
+### Özet
+
+- `document.write()` → HTML sayfasına direkt içerik yazar.
+- `+` ile metinler ve değişkenler birleştirilebilir.
+- Günümüzde genellikle öğrenme amaçlı veya basit denemelerde kullanılır.
+
+## innerHTML ile HTML elementinin içine ekleme ve düzenleme yapma
+
+`innerHTML`, bir HTML elementinin içine **HTML kodu da dahil olmak üzere** içerik eklemek için kullanılır. Yani sadece düz metin değil, HTML etiketlerini de çalıştırır.
+
+```html
+<p id="mesaj"></p>
+
+<script>
+  document.getElementById("mesaj").innerHTML = "Merhaba <b>Dünya</b>";
+</script>
+```
+
+Çıktı (sayfada) : Merhaba Dünya
+
+### Avantajları
+- HTML etiketlerini çalıştırabilir (`<b>`, `<i>`, `<br>` vb.).
+- Dinamik olarak içerik oluşturmak için esnek bir yöntemdir.
+
+### Dezavantajları
+- Kullanıcıdan alınan veriler direkt olarak `innerHTML` ile eklenirse, **XSS (Cross-Site Scripting)** gibi güvenlik açıklarına neden olabilir. Bu yüzden dışarıdan gelen verilerde `innerHTML` kullanımı önerilmez.
+
+## textContent ile HTML elementinin içine ekleme düzenleme yapma
+
+`textContent`, bir HTML elementine **sadece düz metin** ekler. HTML etiketleri yazılsa bile çalıştırılmaz, düz yazı olarak gösterilir.
+
+```html
+<p id="mesaj"></p>
+
+<script>
+  document.getElementById("mesaj").textContent = "Merhaba <b>Dünya</b>";
+</script>
+```
+
+Çıktı (sayfada) : Merhaba <b>Dünya</b>
+
+### Avantajları
+- Daha **güvenli** bir yöntemdir çünkü HTML etiketlerini çalıştırmaz.
+- Kullanıcıdan alınan veriler eklenirken tercih edilmelidir.
+
+### Dezavantajları
+- HTML etiketleri çalıştırılamaz. Yalnızca düz metin eklenir.
+
+## Özet
+
+- **document.write()** → Sayfa yüklenirken içerik basar, sonradan kullanılırsa tüm sayfayı siler. Modern projelerde önerilmez genelde eğitim amaçlı kullanılır.  
+- **innerHTML** → HTML etiketleriyle içerik ekler/değiştirir, ancak kullanıcı verilerinde XSS riski vardır.  
+- **textContent** → Sadece düz metin ekler, HTML çalıştırmaz. En güvenli yöntemdir.  
