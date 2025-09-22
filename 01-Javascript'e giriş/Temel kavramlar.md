@@ -475,7 +475,7 @@ document.write("Adınız: " + "Ali" + "<br>" + "Yaşınız: " + yas); // <br> = 
 </script>
 ```
 
-Çıktı (sayfada) : Merhaba <b>Dünya</b>
+Çıktı (sayfada) : Merhaba &lt;b&gt;Dünya&lt;/b&gt;
 
 ### Avantajları
 - Daha **güvenli** bir yöntemdir çünkü HTML etiketlerini çalıştırmaz.
