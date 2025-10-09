@@ -353,8 +353,8 @@ console.log(isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
 let isim = prompt("Lütfen isminizi giriniz:", "Varsayılan");
 ```
 
-- İlk parametre **("Lütfen isminizi giriniz:")** kullanıcıya gösterilecek mesajdır.
-- İkinci parametre **("Varsayılan")** giriş kutusunda hazır olarak yazılı gelen değerdir (kullanıcı isterse değiştirir, isterse boş bırakabilir).
+- İlk parametre `("Lütfen isminizi giriniz:")` kullanıcıya gösterilecek mesajdır.
+- İkinci parametre `("Varsayılan")` giriş kutusunda hazır olarak yazılı gelen değerdir (kullanıcı isterse değiştirir, isterse boş bırakabilir).
 
 ### Not:
 - Varsayılan değer yazılmayacaksa bile `"" (çift tırnak)` kullanmak iyi bir pratiktir.
