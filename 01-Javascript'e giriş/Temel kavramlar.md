@@ -17,7 +17,7 @@ JavaScript'te her komutun sonunda **noktalı virgül (`;`)** koymak iyi bir prog
 
 ### Neden Önemli?
 
-JavaScript çoğu zaman satır sonlarında noktalı virgül koymazsanız bile otomatik olarak ekleyebilir. Buna **Otomatik Noktalı Virgül Ekleme (Automatic Semicolon Insertion - ASI)** denir. Ancak ASI bazen beklenmedik sonuçlara veya hatalara yol açabilir.
+JavaScript çoğu zaman satır sonlarında noktalı virgül koymasanız bile otomatik olarak ekleyebilir. Buna **Otomatik Noktalı Virgül Ekleme (Automatic Semicolon Insertion - ASI)** denir. Ancak ASI bazen beklenmedik sonuçlara veya hatalara yol açabilir.
 
 Bu yüzden noktalı virgül kullanımı hataları önlemek ve kodun daha okunabilir olması için önerilir.
 
