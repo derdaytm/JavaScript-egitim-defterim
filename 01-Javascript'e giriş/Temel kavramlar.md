@@ -358,8 +358,8 @@ let isim = prompt("Lütfen isminizi giriniz:", "Varsayılan");
 
 ### Not:
 - Varsayılan değer yazılmayacaksa bile `"" (çift tırnak)` kullanmak iyi bir pratiktir.
-- Kullanıcı ***Tamam*** butonuna basarsa girilen değer **string** olarak döner.
-- Kullanıcı ***İptal*** butonuna basarsa fonksiyon **null** döndürür.
+- Kullanıcı ***Tamam*** butonuna basarsa girilen değer ***string*** olarak döner.
+- Kullanıcı ***İptal*** butonuna basarsa fonksiyon ***null*** döndürür.
 
 ```js
 let yas = prompt("Yaşınızı giriniz:", "");
