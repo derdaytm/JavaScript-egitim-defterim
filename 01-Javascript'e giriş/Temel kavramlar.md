@@ -395,7 +395,7 @@ Bu şekilde `confirm()` ile basit onay kontrolleri yapabilirsiniz.
 
 ## Özet 
 
-JavaScript'te kullanıcıyla etkileşim kurmak için üç temel fonksiyon vardır:
+JavaScript'te kullanıcıyla etkileşim kurmak için üç temel fonksiyon vardır *(console.log() doğrudan kullanıcıyla değil, geliştiriciyle etkileşim kurar)* :
 
 1. **alert()** → Ekrana bilgi veya uyarı mesajı gösterir.  
 2. **prompt()** → Kullanıcıdan veri girmesini sağlar; girilen değer string olarak döner.  
