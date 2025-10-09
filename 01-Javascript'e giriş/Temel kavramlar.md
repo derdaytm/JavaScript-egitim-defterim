@@ -1,7 +1,6 @@
 # Temel JavaScript Bilgileri
 
-JavaScript programlama diline yeni başlayanlar için temel kurallar ve dikkat edilmesi gereken noktalar bu dokümanda açıklanmıştır. 
-Kod yazarken uyulması gereken standartlar, kodun doğru ve tutarlı çalışmasını sağlar.
+Bu doküman, JavaScript programlama diline yeni başlayanlar için temel kuralları ve dikkat edilmesi gereken noktaları açıklamaktadır.  
 
 let ile değişken oluşturulur.<br>
 console.log ile konsola çıktı yazdırılır.
