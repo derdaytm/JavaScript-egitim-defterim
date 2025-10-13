@@ -301,11 +301,20 @@ Tarayıcıda ekrana **uyarı (popup) penceresi** çıkarmak için kullanılır.
 ```js
   alert("Merhaba Dünya!");
 ```
+
 İçine değişken de yazılabilir.
 
 ```js
 let isim = "Derda";
 alert(isim); // ekranda "Derda" çıkar
+```
+
+Virgül ile birden fazla değişken yazılamaz onun yerine + kullanılmalıdır.
+
+```js
+let isim = "Derda";
+let soyisim = "Yetim";
+alert(isim + soyisim);
 ```
 
 `+` işareti kullanarak string ve değişkenleri yan yana ekleyebilirsin.
@@ -327,6 +336,10 @@ alert(`Merhaba ${isim}, yaşın ${yas}`);
 ## console.log() ile Konsola Yazı Yazdırma
 
 JavaScript'te **console.log()** fonksiyonu, kod çalışırken bilgi veya değişken değerlerini **tarayıcı konsoluna** yazdırmak için kullanılır. Bu, hata ayıklama (debug) ve kodu takip etme açısından çok faydalıdır.
+
+```js
+console.log("Merhaba Dünya");
+```
 
 `+` operatörü ile birleştirerek kullanım:
 ```js
