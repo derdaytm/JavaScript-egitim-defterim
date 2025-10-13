@@ -223,6 +223,22 @@ JavaScript'te blok yapıları `{ }` ile belirlenir; iç içe geçmiş yapılar u
 ### Özet
 Düzenli yazım, kodun okunmasını kolaylaştırır ve hata yapma riskini azaltır.
 
+## Satır uzunluğu ve okunabilirlik
+Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun satırlar **alt satırlara bölünerek** yazılmalıdır. Bu, kodun okunabilirliğini ve bakımını artırır.
+
+```js
+  // Uzun ve okunması zor
+  let sonuc = sayi1 + sayi2 + sayi3 + sayi4 + sayi5 + sayi6 + sayi7;
+
+  // Daha okunabilir şekilde satırlara bölünmüş
+  let sonuc = sayi1 + sayi2 + sayi3 +
+              sayi4 + sayi5 + sayi6 +
+              sayi7;
+```
+
+### Özet
+Kod satırlarını makul uzunlukta tutmak ve gerektiğinde alt satırlara bölmek, kodu takip etmeyi ve hataları önlemeyi kolaylaştırır.
+
 ## `"use strict"` kullanımı  
 JavaScript'te `"use strict"` ifadesi, kodu **sıkı modda** çalıştırır. Bu mod, hatalara karşı daha duyarlı, güvenli ve temiz bir kod yazmanızı sağlar.  
   Örneğin, değişkenleri tanımlamadan kullanmak veya silinemez özellikleri değiştirmek gibi hataları tespit eder.
@@ -240,22 +256,6 @@ JavaScript'te `"use strict"` ifadesi, kodu **sıkı modda** çalıştırır. Bu 
 
 ### Özet
 **"use strict"** kullanmak, hataları erken tespit etmenizi sağlar ve kodunuzu daha güvenli hale getirir. Tarayıcılar modern kodlarda genellikle bunu otomatik uygular, ancak manuel eklemek iyi bir pratiktir.
-
-## Satır uzunluğu ve okunabilirlik
-Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun satırlar **alt satırlara bölünerek** yazılmalıdır. Bu, kodun okunabilirliğini ve bakımını artırır.
-
-```js
-  // Uzun ve okunması zor
-  let sonuc = sayi1 + sayi2 + sayi3 + sayi4 + sayi5 + sayi6 + sayi7;
-
-  // Daha okunabilir şekilde satırlara bölünmüş
-  let sonuc = sayi1 + sayi2 + sayi3 +
-              sayi4 + sayi5 + sayi6 +
-              sayi7;
-```
-
-### Özet
-Kod satırlarını makul uzunlukta tutmak ve gerektiğinde alt satırlara bölmek, kodu takip etmeyi ve hataları önlemeyi kolaylaştırır.
 
 # Bazı Temel Komutlar ve Kullanımları
 
