@@ -1,6 +1,6 @@
 # 📖 Detaylı Dokümantasyon
 
-## [1. Javascript'e giriş](Temel kavramlar.md)
+## [1. Javascript'e giriş](../01-Javascript'e giriş/Temel kavramlar.md)
 - Noktalı Virgül Kullanımı
 - Tırnak İşaretleri ve Parantezlerin Kullanımı
 - Blok Yapıları `{ }`
