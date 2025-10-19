@@ -353,7 +353,7 @@ let yas = 25;
 console.log(`Kullanıcı adı: ${isim}, Yaşı: ${yas}`); // Çıktı: Kullanıcı adı: Ahmet, Yaşı: 25
 ```
 
-Birden fazla değişkeni virgülle ayırarak kullanım:
+Birden fazla değişkeni virgülle ayırarak kullanım (+ ile de yapılabilir):
 ```js
 let meslek = "Öğrenci";
 console.log(isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
