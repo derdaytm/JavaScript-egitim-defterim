@@ -437,6 +437,10 @@ if (eminMisin) {
 
 JavaScript'te `document.write()` metodu, HTML sayfasına **doğrudan içerik yazdırmak** için kullanılır. Sayfa yüklendiği anda çalışır ve belirtilen metni veya ifadeyi doğrudan ekrana basar.
 
+```js
+document.write("Merhaba Dünya");
+```
+
 `+` operatörü ile birleştirerek kullanım:
 ```js
 let isim = "Ahmet";
