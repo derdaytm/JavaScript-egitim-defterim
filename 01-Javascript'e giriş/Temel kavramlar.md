@@ -350,13 +350,16 @@ console.log("Kullanıcı adı: " + isim); // Çıktı: Kullanıcı adı: Ahmet
 `${}` ( Template literalle ) birlikte kullanım:
 ```js
 let yas = 25;
+let isim = "Ahmet";
 console.log(`Kullanıcı adı: ${isim}, Yaşı: ${yas}`); // Çıktı: Kullanıcı adı: Ahmet, Yaşı: 25
 ```
 
 Birden fazla değişkeni virgülle ayırarak kullanım (+ ile de yapılabilir):
 ```js
 let meslek = "Öğrenci";
-console.log(isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
+let yas = 25;
+let isim = "Ahmet";
+console.log("Bilgiler:", isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
 ```
 
 ## Prompt() ile Veri Alma
