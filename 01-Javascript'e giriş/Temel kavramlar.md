@@ -455,6 +455,7 @@ document.write("Adınız: " + "Ali" + "<br>" + "Yaşınız: " + yas); // <br> = 
 
 ### Not:
 `document.write()` sayfa yüklendikten sonra çalıştırılırsa, mevcut içeriği silip sadece yazdırılan ifadeyi gösterir. Bu yüzden modern projelerde kullanımı önerilmez. Daha güvenli ve kontrollü yöntemler tercih edilmelidir.
+HTML kodlarını da çalıştırabilmektedir.
 
 ### Özet
 
