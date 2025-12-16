@@ -1,47 +1,50 @@
-#Değişkenler
+# Değişkenler
 
 ## Değişken Türleri (Primitive & Non-Primitive)
 
-JavaScript’te değişkenler **iki ana gruba** ayrılır: **Primitive (ilkel)** ve **Non-Primitive (referans)** tipler.  
-Bu ayrım, verilerin **nasıl saklandığını**, **nasıl kopyalandığını** ve **nasıl karşılaştırıldığını** anlamak için önemlidir.
+JavaScript’te değişkenler **ikiye ayrılır**: **Primitive** ve **Non-Primitive**.
 
----
 
 ### Primitive (İlkel) Tipler
-Primitive tipler **tek bir değer** tutar ve **değiştirilemezdir (immutable)**.  
-Bir primitive değişken kopyalandığında, **değerin kendisi kopyalanır**.
+- Tek bir değer tutarlar ve karşılaştırılabilirler.
+- Basit veri tipleridir.
 
-**Primitive veri tipleri:**
-- `Number`
-- `String`
-- `Boolean`
-- `Null`
-- `Undefined`
+**Primitive tipler:**
+- Number
+- String
+- Boolean
+- Null
+- Undefined
 
-**Özellikleri:**
-- Bellekte değeriyle birlikte tutulur
-- Karşılaştırmalar **değer üzerinden** yapılır
-- İçeriği sonradan değiştirilemez (yeni değer atanır)
+### Non-Primitive Tipler
+- Birden fazla veri tutabilirler ancak karşılaştırılamazlar.
+- Daha karmaşık yapılardır
 
----
-
-### Non-Primitive (Referans) Tipler
-Non-primitive tipler **birden fazla veri** tutabilir ve bellekte **referans (adres)** ile saklanır.
-
-**Non-primitive veri tipleri:**
-- `Object`
-- `Array`
-- `Function`
-
-**Özellikleri:**
-- Değişken, verinin kendisini değil **adresini** tutar
-- Karşılaştırmalar **referans üzerinden** yapılır
-- İçerikleri değiştirilebilir (mutable)
-
-> ⚠️ İki farklı object veya array, içeriği aynı olsa bile `===` ile karşılaştırıldığında **eşit kabul edilmez**, çünkü referansları farklıdır.
+**Non-Primitive tipler:**
+- Object
+- Array
+- Function
 
 ---
 
-### Kısa Özet
-- **Primitive** → Tek değer, immutable, değer üzerinden karşılaştırılır  
-- **Non-Primitive** → Referans tutar, mutable, adres üzerinden karşılaştırılır
+## let ile Değişken Tanımlama
+
+JavaScript’te değişken tanımlamak için **let**  ve **const** kullanılır.  
+Her tür veri atanabilir.
+
+### Değişken İsimlendirme Kuralları
+- Rakam ile başlayamaz.
+- Boşluk içermez.
+- Genelde **camelCase** kullanılır (küçük harfle başlayıp sonrasında diğer kelimeye büyük harfle başlamanması).
+- Sadece **`$`** ve **`_`** özel karakter olarak kullanılabilir diğer özel karakterler kullanılamaz.
+- `-` (orta tire) kullanılamaz.
+- JavaScript anahtar kelimeleri değişken adı olamaz.
+
+### Değer Atama
+- Değişken oluşturulurken değer verilebilir.
+- İstenirse **boş** da tanımlanabilir.
+- Aynı değişken sonradan farklı türde değer alabilir.
+
+### Örnek
+```js
+let kullanici = "Ahmet", yas = 25, mesaj;
