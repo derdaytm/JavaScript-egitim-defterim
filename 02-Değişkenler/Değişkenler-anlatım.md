@@ -48,3 +48,20 @@ Her tür veri atanabilir.
 ### Örnek
 ```js
 let kullanici = "Ahmet", yas = 25, mesaj;
+```
+
+Bu kullanım temiz görünse de, değişkenleri alt alta ve ayrı ayrı tanımlamak daha sağlıklıdır; ancak tek satırda veya virgülle yazmak da bir hata değildir.
+
+### Örnek
+```js
+let kullanici = "Ahmet",
+    yas = 25,
+    mesaj;
+
+// ya da
+
+let kullanici = "Ahmet";
+let yas = 25;
+let mesaj;
+```
+
