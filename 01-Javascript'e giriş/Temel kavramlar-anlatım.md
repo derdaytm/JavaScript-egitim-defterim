@@ -141,7 +141,21 @@ if(sayi>10){console.log("Sayı 10'dan büyük");}
 ## `<script>` Etiketi ve Dosya Yolları
 JavaScript kodları HTML sayfasına `<script>` etiketi ile eklenir. Kodları sayfaya ekleme yöntemleri şunlardır:
 
-### 1. Satır İçi (Inline) JavaScript
+### 1. Inline Javascript
+Kod doğrudan HTML tagının içine yazılabilir. Burada `onclick` kullanılır.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JS Örneği</title>
+</head>
+<body>
+    <button onclick="alert('Hello World!')"> Tıkla </button>
+</body>
+</html>
+```
+
+### 2. Internal JavaScript
 Kod doğrudan HTML içinde yazılabilir:
 
 ```html
@@ -160,7 +174,7 @@ Kod doğrudan HTML içinde yazılabilir:
 </html>
 ```
 
-### 2. Harici JavaScript Dosyası
+### 3. Harici JavaScript Dosyası
 Kodları ayrı bir `.js` dosyasında tutmak tercih edilen yöntemdir. Bu, okunabilirliği ve bakım kolaylığını artırır.
 
 ```html
@@ -192,7 +206,7 @@ Dosya Yolları
 <script src="dosya2.js"></script>
 ```
 
-### 3. Performans Önerisi
+### 4. Performans Önerisi
 - `<script>` etiketi `<head>` içinde veya `<body>` sonunda kullanılabilir.
 - `<body>` sonunda kullanmak sayfanın daha hızlı yüklenmesini sağlar.
 
