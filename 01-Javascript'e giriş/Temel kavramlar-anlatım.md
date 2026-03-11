@@ -142,7 +142,7 @@ if(sayi>10){console.log("Sayı 10'dan büyük");}
 JavaScript kodları HTML sayfasına `<script>` etiketi ile eklenir. Kodları sayfaya ekleme yöntemleri şunlardır:
 
 ### 1. Inline Javascript
-Kod doğrudan HTML tagının içine yazılabilir. Burada `onclick` kullanılır.
+Kod doğrudan HTML tagının içine yazılabilir:
 ```html
 <!DOCTYPE html>
 <html>
