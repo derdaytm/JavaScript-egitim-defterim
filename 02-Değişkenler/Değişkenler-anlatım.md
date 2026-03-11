@@ -18,7 +18,7 @@ JavaScript’te değişkenler **ikiye ayrılır**: **Primitive** ve **Non-Primit
 
 ### Non-Primitive Tipler
 - Birden fazla veri tutabilirler ancak karşılaştırılamazlar.
-- Daha karmaşık yapılardır
+- Daha karmaşık yapılardır.
 
 **Non-Primitive tipler:**
 - Object
