@@ -86,4 +86,4 @@ Bu özelliklerin tarayıcılarda veya motorlarda desteklenip desteklenmediğini 
 
 ### 📚 Konu Akışı
  
-**➡️ Sonraki:** [**Temel Kavramlar**](Temel-Notlar/01-Temel-kavramlar.md)   
+**➡️ Sonraki:** [**Temel Kavramlar**](01-Temel-kavramlar.md)   
