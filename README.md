@@ -10,7 +10,7 @@
 
 ## İçerik
 
-- JavaScript'e Giriş  
+- [JavaScript'e Giriş](Temel-Notlar/01-Temel-kavramlar.md)  
 
 Daha detaylı içerik için [DETAYLI DOKÜMANTASYON](DETAYLI-DOKÜMANTASYON.md
 ) dosyasına bakabilirsiniz.
