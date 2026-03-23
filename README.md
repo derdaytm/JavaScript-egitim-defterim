@@ -10,6 +10,7 @@
 
 ## İçerik
 
+- [Javascript Hakkında](Temel-Notlar/00-Javascript-Hakkında.md)
 - [JavaScript'e Giriş](Temel-Notlar/01-Temel-kavramlar.md)
 - [Değişkenler](Temel-Notlar/02-Değişkenler.md)
 
