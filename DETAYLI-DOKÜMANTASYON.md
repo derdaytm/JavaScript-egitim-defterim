@@ -14,12 +14,22 @@
 - Noktalı Virgül Kullanımı
 - Tırnak İşaretleri ve Parantezlerin Kullanımı
 - Blok Yapıları `{ }`
-- Büyük/Küçük Harf Duyarlılığı
-- Boşluk ve Satır Düzeni
-- HTML - JS Bağlantısı (script etiketi, harici dosya kullanımı)
-- "use strict" Kullanımı
-- Yorum Satırları
-- Kullanıcı Etkileşimi (alert, prompt, confirm, console.log)
-- Sayfaya Yazı Yazdırma (document.write, innerHTML, textContent)
+- Büyük/Küçük Harf Duyarlılığı ve Boşluk, Satır Düzeni
+- HTML - JS Bağlantısı (`script` etiketi, harici dosya kullanımı)
+  - Inline Javascript
+  - Internal Javascript
+  - Harici Javascript
+- Yazım Düzeni
+- Satır Uzunluğu ve Okunabilirlik
+- `"use strict"` Kullanımı
+- Bazı Temel Komutlar ve Kullanımları
+  - Yorum Satırları
+  - `Alert()` ile Ekrana Popup Çıkarma
+  - `console.log()` ile Konsola Yazı Yazdırma
+  - `Prompt()` ile Veri Alma
+  - `Confirm()` ile Onay Alma
+  - `document.write()` ile HTML Sayfasına Yazı Yazdırma
+  - `innerHTML` ile HTML elementinin içine ekleme ve düzenleme yapma
+  - `textContent` ile HTML elementinin içine ekleme düzenleme yapma
   
 ---
