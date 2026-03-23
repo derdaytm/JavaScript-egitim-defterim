@@ -308,7 +308,7 @@ function selamVer(isim) {
 ### Not
 Yorumları, kodun ne yaptığını değil, neden yapıldığını açıklamak için kullan. Kod zaten ne yaptığını göstermelidir.
 
-## Alert() ile Ekrana Popup Çıkarma
+## alert() ile Ekrana Popup Çıkarma
 Tarayıcıda ekrana **uyarı (popup) penceresi** çıkarmak için kullanılır.  
 Örneğin hata mesajı, bilgi mesajı veya kullanıcıya bildirim vermek için tercih edilir.  
 
@@ -376,7 +376,7 @@ let isim = "Ahmet";
 console.log("Bilgiler:", isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
 ```
 
-## Prompt() ile Veri Alma
+## prompt() ile Veri Alma
 `prompt()` fonksiyonu, kullanıcıdan veri almak için kullanılan en temel yöntemlerden biridir.<br>
 
 ```js
