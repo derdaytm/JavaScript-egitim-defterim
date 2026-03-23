@@ -308,7 +308,7 @@ function selamVer(isim) {
 ### Not
 Yorumları, kodun ne yaptığını değil, neden yapıldığını açıklamak için kullan. Kod zaten ne yaptığını göstermelidir.
 
-## alert() ile Ekrana Popup Çıkarma
+## `alert()` ile Ekrana Popup Çıkarma
 Tarayıcıda ekrana **uyarı (popup) penceresi** çıkarmak için kullanılır.  
 Örneğin hata mesajı, bilgi mesajı veya kullanıcıya bildirim vermek için tercih edilir.  
 
@@ -347,7 +347,7 @@ let yas = 25;
 alert(`Merhaba ${isim}, yaşın ${yas}`);
 ```
 
-## console.log() ile Konsola Yazı Yazdırma
+## `console.log()` ile Konsola Yazı Yazdırma
 
 JavaScript'te **console.log()** fonksiyonu, kod çalışırken bilgi veya değişken değerlerini **tarayıcı konsoluna** yazdırmak için kullanılır. Bu, hata ayıklama (debug) ve kodu takip etme açısından çok faydalıdır.
 
@@ -376,7 +376,7 @@ let isim = "Ahmet";
 console.log("Bilgiler:", isim, yas, meslek); // Çıktı: Ahmet 25 Öğrenci
 ```
 
-## prompt() ile Veri Alma
+## `prompt()` ile Veri Alma
 `prompt()` fonksiyonu, kullanıcıdan veri almak için kullanılan en temel yöntemlerden biridir.<br>
 
 ```js
@@ -404,7 +404,7 @@ Eğer iptal edilirse, ekranda: `Girdiğiniz yaş : null`
 - Kullanıcı ***iptal*** ettiğinde değer **null** olur.
 - Varsayılan değer eklemek kullanıcı deneyimini iyileştirir yoksa bile boş bırakmak daha sağlıklıdır.
 
-## confirm() ile Onay Alma
+## `confirm()` ile Onay Alma
 
 JavaScript'te kullanıcıdan **onay** almak için `confirm()` fonksiyonu kullanılır.  
 Bu fonksiyon, ekranda **Tamam** ve **İptal** seçenekleri olan bir dialog kutusu açar.
@@ -450,7 +450,7 @@ if (eminMisin) {
     console.log("Kullanıcı iptal etti.");
 }
 ```
-## document.write() ile HTML Sayfasına Yazı Yazdırma
+## `document.write()` ile HTML Sayfasına Yazı Yazdırma
 
 JavaScript'te `document.write()` metodu, HTML sayfasına **doğrudan içerik yazdırmak** için kullanılır. Sayfa yüklendiği anda çalışır ve belirtilen metni veya ifadeyi doğrudan ekrana basar.
 
@@ -477,7 +477,7 @@ HTML kodlarını da çalıştırabilmektedir.
 - `+` ile metinler ve değişkenler birleştirilebilir.
 - Günümüzde genellikle öğrenme amaçlı veya basit denemelerde kullanılır.
 
-## innerHTML ile HTML elementinin içine ekleme ve düzenleme yapma
+## `innerHTML` ile HTML elementinin içine ekleme ve düzenleme yapma
 
 `innerHTML`, bir HTML elementinin içine **HTML kodu da dahil olmak üzere** içerik eklemek için kullanılır. Yani sadece düz metin değil, HTML etiketlerini de çalıştırır.
 
