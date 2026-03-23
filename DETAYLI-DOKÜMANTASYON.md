@@ -10,7 +10,7 @@
 - Kılavuz
 - Özelliklerin Desteği
 
-## [1. Javascript'e giriş](01-Javascript'e%20giriş/Temel%20kavramlar-anlatım.md)
+## [1. Javascript'e giriş](Temel-Notlar/01-Temel-kavramlar.md)
 - Noktalı Virgül Kullanımı
 - Tırnak İşaretleri ve Parantezlerin Kullanımı
 - Blok Yapıları `{ }`
