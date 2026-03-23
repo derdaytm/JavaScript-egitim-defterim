@@ -524,3 +524,10 @@ HTML kodlarını da çalıştırabilmektedir.
 - **document.write()** → Sayfa yüklenirken içerik basar, sonradan kullanılırsa tüm sayfayı siler. Modern projelerde önerilmez genelde eğitim amaçlı kullanılır.  
 - **innerHTML** → HTML etiketleriyle içerik ekler/değiştirir, ancak kullanıcı verilerinde XSS riski vardır.  
 - **textContent** → Sadece düz metin ekler, HTML çalıştırmaz. En güvenli yöntemdir.  
+
+---
+
+### 📚 Konu Akışı
+
+**⬅️ Önceki:** [**Javascript Hakkında**](00-Javascript-Hakkında.md)  
+**➡️ Sonraki:** [**Değişkenler**](02-Değişkenler.md)  
