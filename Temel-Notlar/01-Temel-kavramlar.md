@@ -253,24 +253,6 @@ Eğer bir kod satırı çok uzunsa, yatayda takip zorlaşır. Bu yüzden uzun sa
 ### Özet
 Kod satırlarını makul uzunlukta tutmak ve gerektiğinde alt satırlara bölmek, kodu takip etmeyi ve hataları önlemeyi kolaylaştırır.
 
-## `"use strict"` kullanımı  
-JavaScript'te `"use strict"` ifadesi, kodu **sıkı modda** çalıştırır. Bu mod, hatalara karşı daha duyarlı, güvenli ve temiz bir kod yazmanızı sağlar.  
-  Örneğin, değişkenleri tanımlamadan kullanmak veya silinemez özellikleri değiştirmek gibi hataları tespit eder.
-
-  ```js
-  // Sıkı mod kullanılmadan
-  x = 10; // Hata vermez, global değişken oluşturulur
-  console.log(x); // 10
-
-  // Sıkı mod ile
-  "use strict";
-  y = 20; // Hata: y tanımlanmadan kullanılamaz
-  console.log(y);
-```
-
-### Özet
-**"use strict"** kullanmak, hataları erken tespit etmenizi sağlar ve kodunuzu daha güvenli hale getirir. Tarayıcılar modern kodlarda genellikle bunu otomatik uygular, ancak manuel eklemek iyi bir pratiktir.
-
 # Bazı Temel Komutlar ve Kullanımları
 
 ## Yorum Satırları
