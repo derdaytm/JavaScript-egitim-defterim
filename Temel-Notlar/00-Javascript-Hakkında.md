@@ -3,7 +3,7 @@
 - Bu dilde yazılan kod parçalarına **betik (script)** denir ve doğrudan HTML içerisine eklenerek sayfa yüklendiği anda çalıştırılabilir.
 - JavaScript kodları, diğer birçok dilin aksine derleme sürecine ihtiyaç duymadan doğrudan çalıştırılır. Bu özelliği sayesinde JavaScript, çalışma mantığı açısından birçok programlama dilinden farklıdır.
 
-## Neden JavaScript?
+## Neden JavaScript ?
 - JavaScript ilk ortaya çıktığında “LiveScript” adıyla geliştirilmiştir. Ancak o dönemde Java dili çok popüler olduğu için, daha fazla dikkat çekmesi amacıyla adı JavaScript olarak değiştirilmiştir.
 - Zamanla JavaScript gelişerek kendi standartları olan **ECMAScript** yapısına sahip, bağımsız bir programlama dili haline gelmiştir.
 - Günümüzde Java ile isim benzerliği dışında herhangi bir bağlantısı yoktur.
